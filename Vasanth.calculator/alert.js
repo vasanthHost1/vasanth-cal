@@ -1,1 +1,0 @@
-alert('Hey users, please use this web app on both PCs and laptops for a better experience.');
