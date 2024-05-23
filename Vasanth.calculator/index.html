@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <script src="alert.js"></script>
+
+    <style>
+body{
+    background-image: url(images/cal.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+    
+
+
+}
+
+.cal{
+    box-shadow: 1px 3px 1px;
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 770px;
+    margin-top: 200px;
+    border-radius: 30px;
+    background-color: rgb(188, 220, 248);
+
+
+}
+
+
+button{
+
+width: 100px;
+height: 40px;
+
+border-radius: 50px;
+background-color: rgb(239, 239, 167);
+
+}
+
+input{
+
+height: 30px;
+border-radius: 30px;
+background-color: rgb(239, 239, 167);
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="cal"> 
+
+        <h1>Calculator</h1>
+
+        <br>
+    <input type="number" id="num1" placeholder="enter number"><br><br>
+    <input type="number"  id="num2" placeholder="enter number"><br><br>
+    <button onclick="resultFunction()">add</button>
+    <button onclick="sub()">sub</button><br>
+
+    <p></p>
+    <button onclick="mul()">multiplication</button>
+    <button onclick="div()">Division</button><br><br>
+
+    
+
+    <p style="font-size:xx-large;" id="result">Result</p>
+    <footer>This App are Devoloped by Vasanth Host</footer>
+</div>
+
+
+    <script>
+    alert('“Hey users, please use this web app on both PCs and laptops for a better experience.” 😊🌐')
+
+
+
+        var box1=document.getElementById("num1")
+        var box2=document.getElementById("num2")
+
+        var result=document.getElementById("result")
+
+        function resultFunction(){
+
+            var box1value = Number(box1.value)
+            var box2value = Number(box2.value)
+
+            var Total= box1value+box2value
+
+         result.textContent=Total
+        
+        }
+
+
+        function sub(){
+
+            var box1value=Number(box1.value)
+            var box2value=Number(box2value)
+
+            var Total=box1.value-box2.value
+
+            result.textContent=Total
+
+        }
+
+        function mul(){
+
+
+            var box1value = Number(box1.value)
+            var box2value = Number(box2.value)
+
+            var Total =box1.value*box2.value
+
+            result.textContent=Total
+
+        }
+
+        function div(){
+
+
+            var box1value = Number(box1.value)
+            var box2value = Number(box2.value)
+
+            var Total =box1.value/box2.value
+
+            result.textContent=Total
+
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
